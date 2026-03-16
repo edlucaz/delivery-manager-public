@@ -28,7 +28,7 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 |---|---|---|
 | **Stack** | Next.js 15 · TypeScript · FastAPI · PostgreSQL | Python 3 · Django · Bootstrap · PostgreSQL |
 | **Deploy** | Vercel + Hetzner | Render |
-| **Acesso** | [🔗 Abrir na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/) | [🔗 Abrir no Render](https://delivery-manager-pbsj.onrender.com/) |
+| **Acesso** | [🔗 Abrir na Vercel](https://delivery-manager-showcase.vercel.app/) | [🔗 Abrir no Render](https://delivery-manager-pbsj.onrender.com/) |
 | **Documentação** | ← *você está aqui* | [📄 README Django](./README-django.md) |
 
 > ⏳ O Render pode levar ~30s para iniciar na primeira requisição (free tier).
