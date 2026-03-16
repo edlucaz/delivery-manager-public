@@ -28,7 +28,7 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 |---|---|---|
 | **Stack** | Next.js 15 · TypeScript · FastAPI · PostgreSQL | Python 3 · Django · Bootstrap · PostgreSQL |
 | **Deploy** | Vercel + Hetzner | Render |
-| **Acesso** | [🔗 Abrir na Vercel](https://delivery-manager-showcase.vercel.app/) | [🔗 Abrir no Render](https://delivery-manager-pbsj.onrender.com/) |
+| **Acesso** | [🔗 Abrir na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/) | [🔗 Abrir no Render](https://delivery-manager-pbsj.onrender.com/) |
 | **Documentação** | ← *você está aqui* | [📄 README Django](./README-django.md) |
 
 > ⏳ O Render pode levar ~30s para iniciar na primeira requisição (free tier).
@@ -59,9 +59,7 @@ A frontpage apresenta o produto e permite escolher entre três tipos de estabele
 
 ### Frontpage — Vitrine do produto
 
-| Hero / Apresentação | Seleção de segmento |
-|---|---|
-| ![Frontpage Hero](./screenshots/frontpage-hero.png) | ![Seleção de segmento](./screenshots/frontpage-segmentos.png) |
+![Frontpage](./screenshots/frontpage.png)
 
 ### Storefront — Açaí Vitrine
 
@@ -71,33 +69,27 @@ A frontpage apresenta o produto e permite escolher entre três tipos de estabele
 
 ### Storefront — Pizzaria
 
-| Cardápio | Carrinho / Checkout |
-|---|---|
-| ![Cardápio Pizza](./screenshots/pizzaria-cardapio.png) | ![Checkout Pizza](./screenshots/pizzaria-checkout.png) |
+![Storefront Pizzaria](./screenshots/pizzaria-storefront.png)
+
+> 📌 Demais telas em breve.
 
 ### Storefront — Lanchonete
 
-| Cardápio | Carrinho / Checkout |
-|---|---|
-| ![Cardápio Lanche](./screenshots/lanchonete-cardapio.png) | ![Checkout Lanche](./screenshots/lanchonete-checkout.png) |
+![Storefront Lanchonete](./screenshots/lanchonete-storefront.png)
+
+> 📌 Demais telas em breve.
 
 ### Painel Administrativo
 
-| Dashboard | Gestão de Pedidos |
-|---|---|
-| ![Dashboard](./screenshots/admin-dashboard.png) | ![Pedidos](./screenshots/admin-pedidos.png) |
+![Dashboard](./screenshots/admin-dashboard.png)
 
-| Cadastro de Produtos | Controle de Estoque |
-|---|---|
-| ![Produtos](./screenshots/admin-produtos.png) | ![Estoque](./screenshots/admin-estoque.png) |
+> 📌 Demais telas em breve.
 
 ### Portal do Cliente
 
-| Dashboard do cliente | Programa de Fidelidade |
-|---|---|
-| ![Cliente](./screenshots/cliente-dashboard.png) | ![Fidelidade](./screenshots/cliente-fidelidade.png) |
+![Dashboard do cliente](./screenshots/cliente-dashboard.png)
 
-> 📌 Adicione as capturas na pasta `screenshots/` para ativar as imagens acima.
+> 📌 Demais telas em breve.
 
 ---
 
