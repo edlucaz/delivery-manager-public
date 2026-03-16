@@ -11,8 +11,8 @@ O código-fonte é proprietário e mantido em repositório privado.
 
 | Versão | Stack | Link |
 |---|---|---|
-| **Atual** — Next.js + FastAPI | Next.js 15 · TypeScript · TailwindCSS | 🔗 [Ver demo na Vercel](https://YOUR_VERCEL_URL) |
-| **Legado** — Django | Python · Django · Bootstrap | 🔗 [Ver demo no Render](https://YOUR_RENDER_URL) |
+| **Atual** — Next.js + FastAPI | Next.js 15 · TypeScript · TailwindCSS | 🔗 [Ver demo na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/) |
+| **Legado** — Django | Python · Django · Bootstrap | 🔗 [Ver demo no Render](https://delivery-manager-pbsj.onrender.com/) |
 
 > As demos usam backend simulado com dados fictícios. Nenhum dado real é armazenado.
 >
