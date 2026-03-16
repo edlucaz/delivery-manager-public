@@ -37,13 +37,49 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 
 | Área | URL | Credenciais |
 |---|---|---|
+| Frontpage / Vitrine | `/storefront` | ✅ Sem login — acesso público |
 | Painel Administrativo | `/login` | Qualquer e-mail + qualquer senha |
 | Portal do Cliente | `/cliente/login` | Qualquer e-mail/telefone + qualquer senha |
-| Storefront | `/storefront` | ✅ Sem login — acesso público |
+
+---
+
+## 🗂️ Segmentos disponíveis na vitrine
+
+A frontpage apresenta o produto e permite escolher entre três tipos de estabelecimento, cada um com cardápio, fluxo de pedido e identidade visual próprios:
+
+| Segmento | URL | Status |
+|---|---|---|
+| 🍧 Açaí Vitrine | `/storefront/acai` | ✅ Disponível |
+| 🍕 Pizzaria | `/storefront/pizzaria` | ✅ Disponível |
+| 🍔 Lanchonete | `/storefront/lanchonete` | ✅ Disponível |
 
 ---
 
 ## 📸 Screenshots
+
+### Frontpage — Vitrine do produto
+
+| Hero / Apresentação | Seleção de segmento |
+|---|---|
+| ![Frontpage Hero](./screenshots/frontpage-hero.png) | ![Seleção de segmento](./screenshots/frontpage-segmentos.png) |
+
+### Storefront — Açaí Vitrine
+
+| Cardápio | Carrinho / Checkout |
+|---|---|
+| ![Cardápio Açaí](./screenshots/acai-cardapio.png) | ![Checkout Açaí](./screenshots/acai-checkout.png) |
+
+### Storefront — Pizzaria
+
+| Cardápio | Carrinho / Checkout |
+|---|---|
+| ![Cardápio Pizza](./screenshots/pizzaria-cardapio.png) | ![Checkout Pizza](./screenshots/pizzaria-checkout.png) |
+
+### Storefront — Lanchonete
+
+| Cardápio | Carrinho / Checkout |
+|---|---|
+| ![Cardápio Lanche](./screenshots/lanchonete-cardapio.png) | ![Checkout Lanche](./screenshots/lanchonete-checkout.png) |
 
 ### Painel Administrativo
 
@@ -55,17 +91,13 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 |---|---|
 | ![Produtos](./screenshots/admin-produtos.png) | ![Estoque](./screenshots/admin-estoque.png) |
 
-### Storefront (cliente final)
-
-| Cardápio | Carrinho / Checkout |
-|---|---|
-| ![Cardápio](./screenshots/storefront-cardapio.png) | ![Checkout](./screenshots/storefront-checkout.png) |
-
 ### Portal do Cliente
 
 | Dashboard do cliente | Programa de Fidelidade |
 |---|---|
 | ![Cliente](./screenshots/cliente-dashboard.png) | ![Fidelidade](./screenshots/cliente-fidelidade.png) |
+
+> 📌 Adicione as capturas na pasta `screenshots/` para ativar as imagens acima.
 
 ---
 
@@ -81,6 +113,7 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 - Configurações da loja: horário, taxas, formas de pagamento, cores, logo
 
 ### Storefront público
+- Frontpage com apresentação do produto e seleção de segmento
 - Cardápio organizado por categorias com busca
 - Modal de produto com seleção de tamanho e adicionais
 - Carrinho persistente com edição e duplicação de itens
@@ -140,6 +173,7 @@ Cada estabelecimento opera em subdomínio próprio (`loja.dominio.com.br`). Isol
 ## 📦 Roadmap
 
 - [x] Storefront com cardápio e checkout
+- [x] Frontpage com seleção de segmento (açaí, pizzaria, lanchonete)
 - [x] Painel admin: produtos, categorias, adicionais
 - [x] Painel admin: pedidos e pipeline de status
 - [x] Painel admin: controle de estoque
@@ -152,9 +186,18 @@ Cada estabelecimento opera em subdomínio próprio (`loja.dominio.com.br`). Isol
 
 ---
 
+## 👨‍💻 Equipe
+
+| Dev | GitHub |
+|---|---|
+| **Lucas Rocha** | [@edlucaz](https://github.com/edlucaz) |
+| **Felipe Rocha** | [@FlpRocha236](https://github.com/FlpRocha236) |
+
+---
+
 ## 💼 Sobre
 
-Produto desenvolvido pela **[Next Change Soluções Digitais](https://nextchange.com.br)**.
+Produto desenvolvido pela **[Next Change Solutions](https://nextchange.com.br)**.
 
 Para informações comerciais, demonstração personalizada ou contato técnico:
 
@@ -164,4 +207,4 @@ Para informações comerciais, demonstração personalizada ou contato técnico:
 
 ---
 
-*Código-fonte proprietário. Todos os direitos reservados. © Next Change Soluções Digitais.*
+*Código-fonte proprietário. Todos os direitos reservados. © Next Change Solutions.*
