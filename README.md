@@ -71,13 +71,9 @@ A frontpage apresenta o produto e permite escolher entre três tipos de estabele
 
 ![Storefront Pizzaria](./screenshots/pizzaria-storefront.png)
 
-> 📌 Demais telas em breve.
-
 ### Storefront — Lanchonete
 
 ![Storefront Lanchonete](./screenshots/lanchonete-storefront.png)
-
-> 📌 Demais telas em breve.
 
 ### Painel Administrativo
 
