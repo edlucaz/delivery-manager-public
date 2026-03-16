@@ -170,22 +170,6 @@ Cada estabelecimento opera em subdomínio próprio (`loja.dominio.com.br`). Isol
 
 ---
 
-## 📦 Roadmap
-
-- [x] Storefront com cardápio e checkout
-- [x] Frontpage com seleção de segmento (açaí, pizzaria, lanchonete)
-- [x] Painel admin: produtos, categorias, adicionais
-- [x] Painel admin: pedidos e pipeline de status
-- [x] Painel admin: controle de estoque
-- [x] Portal do cliente: histórico de pedidos e fidelidade
-- [x] Multitenancy com subdomínio e RLS
-- [ ] Notificações WhatsApp automáticas (Evolution API)
-- [ ] Relatórios financeiros avançados
-- [ ] Impressão de comanda (impressora térmica)
-- [ ] App mobile (React Native)
-
----
-
 ## 👨‍💻 Equipe
 
 | Dev | GitHub |
