@@ -1,6 +1,6 @@
-# 🛵 Delivery Manager
+# 🛵 Delivery Manager — Versão Legado (Django)
 
-> Sistema SaaS multitenant de gestão de delivery — com storefront público, painel administrativo e portal do cliente.
+> Sistema SaaS de gestão de delivery — versão MVP inicial, desenvolvida com Django e Bootstrap.
 
 Este repositório é uma **vitrine pública** do projeto. O código-fonte é proprietário e mantido em repositório privado.
 
@@ -13,10 +13,10 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 
 ---
 
-[![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js)](https://nextjs.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Python](https://img.shields.io/badge/Python_3-3776AB?logo=python&logoColor=white)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)](https://djangoproject.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://postgresql.org)
 
 ---
 
@@ -24,7 +24,9 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 
 > ⚠️ **Esta demo utiliza backend simulado com dados fictícios.** Nenhum dado real é processado ou armazenado. O objetivo é demonstrar a interface e o fluxo de uso do sistema real.
 
-🔗 **[Ver demo na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/)**
+🔗 **[Ver demo no Render](https://delivery-manager-pbsj.onrender.com/)**
+
+> ⏳ O Render pode levar ~30s para iniciar o container na primeira requisição (free tier).
 
 ### 🔑 Acesso à demo
 
@@ -65,9 +67,9 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 ## 🧩 Funcionalidades
 
 ### Painel Administrativo
-- Dashboard com métricas em tempo real: vendas, ticket médio, pedidos por hora, top produtos
+- Dashboard com métricas: vendas, ticket médio, pedidos por hora, top produtos
 - Gestão de pedidos com pipeline de status: `pendente → confirmado → preparando → saiu para entrega → entregue`
-- Cadastro de produtos com múltiplos tamanhos (300ml, 500ml, 700ml, 1L) e preço único
+- Cadastro de produtos com múltiplos tamanhos e preço único
 - Cadastro de categorias e adicionais
 - Controle de estoque com histórico de movimentações
 - Relatório financeiro básico
@@ -99,49 +101,40 @@ Cliente final         Admin / Gerente        Cliente logado
  Storefront             Dashboard              Portal Cliente
      └──────────────────────┼──────────────────────┘
                             │
-                     Next.js 15 (Vercel)
+                    Django (Render)
                             │
-                     FastAPI (Hetzner)
-                            │
-                    PostgreSQL 16 + Redis 7
+                       PostgreSQL
 ```
 
 ### Stack técnica
 
-**Frontend**
-- Next.js 15 (App Router) + TypeScript
-- TailwindCSS + shadcn/ui
-- Zustand (estado global) · React Hook Form + Zod (formulários) · TanStack Query (cache e fetching)
-
 **Backend**
-- FastAPI (Python 3.12) + SQLAlchemy + Alembic
-- PostgreSQL 16 + Redis 7
-- WebSockets para atualizações de pedidos em tempo real
+- Python 3 + Django + Django REST Framework
+- PostgreSQL
+- Autenticação por sessão (Django auth)
+- Polling para atualização de status de pedidos
 
-**Infraestrutura**
-- Vercel (frontend)
-- Hetzner CX22 + Coolify + Docker (API e banco)
-- Cloudflare R2 (armazenamento de imagens)
-- Evolution API (notificações WhatsApp) · Resend (e-mails transacionais) · Stripe + Pagar.me (pagamentos)
+**Frontend**
+- Templates Django (server-side rendering)
+- Bootstrap 5
+- JavaScript vanilla + HTMX para interatividade parcial
 
-### Multitenancy
-
-Cada estabelecimento opera em subdomínio próprio (`loja.dominio.com.br`). Isolamento completo por `tenant_id` em todas as tabelas, com Row Level Security no PostgreSQL garantindo que nenhum tenant acesse dados de outro.
+**Deploy**
+- Render (web service + PostgreSQL gerenciado — free tier)
 
 ---
 
-## 📦 Roadmap
+## 🔄 Por que foi reescrito?
 
-- [x] Storefront com cardápio e checkout
-- [x] Painel admin: produtos, categorias, adicionais
-- [x] Painel admin: pedidos e pipeline de status
-- [x] Painel admin: controle de estoque
-- [x] Portal do cliente: histórico de pedidos e fidelidade
-- [x] Multitenancy com subdomínio e RLS
-- [ ] Notificações WhatsApp automáticas (Evolution API)
-- [ ] Relatórios financeiros avançados
-- [ ] Impressão de comanda (impressora térmica)
-- [ ] App mobile (React Native)
+Esta versão validou o produto e as funcionalidades principais. A migração para Next.js + FastAPI foi motivada por:
+
+| Limitação no Django | Solução na versão atual |
+|---|---|
+| SSR dificulta UX reativa | React com App Router e TanStack Query |
+| Polling consome recursos | WebSockets nativos |
+| Session auth não escala bem | JWT stateless |
+| Deploy free tier instável | Hetzner + Coolify + Docker |
+| Multitenancy via middleware | RLS no PostgreSQL |
 
 ---
 
