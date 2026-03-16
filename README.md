@@ -20,13 +20,20 @@ Este repositório é uma **vitrine pública** do projeto. O código-fonte é pro
 
 ---
 
-## 🚀 Demo ao vivo
+## 🖥️ Ambientes disponíveis
 
-> ⚠️ **Esta demo utiliza backend simulado com dados fictícios.** Nenhum dado real é processado ou armazenado. O objetivo é demonstrar a interface e o fluxo de uso do sistema real.
+> ⚠️ **Todos os ambientes utilizam backend simulado com dados fictícios.** Nenhum dado real é processado ou armazenado.
 
-🔗 **[Ver demo na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/)**
+| | **Versão Atual — Next.js + FastAPI** | **Versão Legado — Django** |
+|---|---|---|
+| **Stack** | Next.js 15 · TypeScript · FastAPI · PostgreSQL | Python 3 · Django · Bootstrap · PostgreSQL |
+| **Deploy** | Vercel + Hetzner | Render |
+| **Acesso** | [🔗 Abrir na Vercel](https://delivery-manager-showcase-dvbnpdhmy-edlucazs-projects.vercel.app/) | [🔗 Abrir no Render](https://delivery-manager-pbsj.onrender.com/) |
+| **Documentação** | ← *você está aqui* | [📄 README Django](./README-django.md) |
 
-### 🔑 Acesso à demo
+> ⏳ O Render pode levar ~30s para iniciar na primeira requisição (free tier).
+
+### 🔑 Credenciais de acesso
 
 | Área | URL | Credenciais |
 |---|---|---|
