@@ -147,8 +147,8 @@ Produto desenvolvido pela **Next Change Solutions**.
 
 Para informações comerciais ou demonstração personalizada:
 
-- 📧 seu@email.com
-- 💼 [linkedin.com/in/edlucaz](https://linkedin.com/in/edlucaz)
+- 📧 rocha.edllucaz@gmail.com
+- 💼 [linkedin.com/in/edlucaz](https://linkedin.com/in/edlucazrocha)
 
 ---
 
