@@ -1,3 +1,5 @@
+> Status: estável · Tipo: vitrine · Deploy: Vercel (Next.js) e Render (legado Django) — links no README
+
 # 🛵 Delivery Manager
 
 > Sistema SaaS multitenant de gestão de delivery — com storefront público, painel administrativo e portal do cliente.
